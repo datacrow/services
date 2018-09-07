@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="build" name="data crow">
+
+    <target depends="build-datacrow" name="build"/>
+
+    <target name="build-datacrow">
+    
+        <mkdir dir="_classes/" />
+        <javac srcdir="_source/" destdir="_classes/" debug="true">
+          <classpath path="../datacrow/datacrow.jar;../datacrow/services/amazon.jar;lib/log4j.jar" />
+        </javac>
+        
+        <jar basedir="_classes" manifest="manifest.mf"  jarfile="standard_services_pack.jar"  />
+        
+    </target>
+</project>

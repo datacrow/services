@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: Robert Jan van der Waals, The Netherlands
+Implementation-Version: 1.0
+Implementation-Title: Data Crow - Standard services pack
